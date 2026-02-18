@@ -1,1 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Posting Site</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #post-form { margin-bottom: 20px; }
+        #posts { border-top: 1px solid #ccc; padding-top: 20px; }
+        #post-writer { font-family: 'Courier New', Courier, monospace;}
+        .post { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .post p { margin: 0; }
+        .post .timestamp { font-size: 0.8em; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Simple Posting Site</h1>
+    <input placeholder="Write your name here..."  id="post-writer" type="text">
+    <div id="post-form">
+        <textarea id="post-content" rows="4" cols="50" placeholder="Write your post here..."></textarea><br>
+        <button id="submit-post">Post</button>
+    </div>
+    <div id="posts"></div>
 
+    <script src="script.js"></script>
+</body>
+</html>
